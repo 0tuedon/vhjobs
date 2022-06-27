@@ -15,7 +15,7 @@ const Pricing = () => {
           </p>
         </div>
         <div className="overflow-x-auto hide-scrollbar">
-          <div className="border border-primary h-96 mb-5 w-fit mx-auto rounded-lg flex justify-center items-start">
+          <div className="border border-primary h-fit mb-5 w-fit mx-auto rounded-lg flex justify-center items-start">
             {Array(3)
               .fill()
               .map((item, i) => (

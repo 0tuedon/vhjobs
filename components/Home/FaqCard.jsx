@@ -21,17 +21,19 @@ export const FaqCard = () => {
         >
           Can I subcribe me than one package at once?{" "}
         </h3>
-        {isOpened ? (
-          <AiOutlineMinus
-            className="w-5 h-5 text-primary font-medium cursor-pointer"
-            onClick={handleToggle}
-          />
-        ) : (
-          <AiOutlinePlus
-            className="w-5 h-5 cursor-pointer font-medium"
-            onClick={handleToggle}
-          />
-        )}
+        <span>
+          {isOpened ? (
+            <AiOutlineMinus
+              className="w-5 h-5 text-primary font-medium cursor-pointer"
+              onClick={handleToggle}
+            />
+          ) : (
+            <AiOutlinePlus
+              className="w-5 h-5 cursor-pointer font-medium"
+              onClick={handleToggle}
+            />
+          )}
+        </span>
       </span>
       <p className={`text-sm ${isOpened ? "h-auto" : "h-0"}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
