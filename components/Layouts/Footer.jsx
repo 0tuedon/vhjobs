@@ -47,19 +47,19 @@ const Footer = () => {
           <div className="border-t border-white md:border-transparent py-3 flex-1 w-full">
             <h3 className="text-base font-medium mb-3 capitalize">Follow us</h3>
             <span className="flex gap-3">
-              <span className="border rounded-full py-2 px-3 grid place-items-center w-fit">
+              <span className="border rounded-full h-10 w-10 grid place-items-center">
                 <GrFacebookOption className="w-5 h-5 text-[#1877F2]" />
               </span>
-              <span className="border rounded-full py-2 px-3 grid place-items-center w-fit">
+              <span className="border rounded-full h-10 w-10 grid place-items-center">
                 <BsTwitter className="w-5 h-5 text-[#1DA1F2]" />
               </span>
-              <span className="border rounded-full py-2 px-3 grid place-items-center w-fit">
+              <span className="border rounded-full h-10 w-10 grid place-items-center">
                 <GrLinkedinOption className="w-5 h-5 text-[#0E76A8]" />
               </span>
-              <span className="border rounded-full py-2 px-3 grid place-items-center w-fit">
+              <span className="border rounded-full h-10 w-10 grid place-items-center">
                 <BsYoutube className="w-5 h-5 text-[#FF0000]" />
               </span>
-              <span className="border rounded-full p-4 grid place-items-center h-10 w-10 relative">
+              <span className="border rounded-full grid place-items-center h-10 w-10 relative">
                 <Image src={Instagram} alt="instagram" layout="fill" />
               </span>
             </span>
