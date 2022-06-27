@@ -22,7 +22,7 @@ const Download = () => {
         </div>
         <div className="relative z-10 px-5 pt-5 md:px-10 md:pt-10 md:flex justify-between items-start">
           <div>
-            <h1 className="text-3xl md:text-4xl font-semibold mb-2 text-center md:text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2 text-center md:text-left">
               Download Vhjobs app
             </h1>
             <p className="text-base hidden md:block mb-5">
@@ -33,18 +33,18 @@ const Download = () => {
               <Image src={QRCode} alt="qr code" layout="fill" />
             </div>
           </div>
-          <div className="relative w-full h-96">
+          <div className="relative w-full h-56 sm:h-96">
             <Image src={Iphone} alt="iphone" layout="fill" />
           </div>
           <span className="md:hidden absolute bottom-5 left-1/2 -translate-x-1/2 space-y-3">
             <Link href="/" passHref>
-              <a className="text-white font-medium flex justify-between items-center rounded-full bg-primary py-3 px-5 gap-2">
+              <a className="text-white text-sm sm:text-base font-medium flex justify-between items-center rounded-full bg-primary py-3 px-3 sm:px-5 gap-2">
                 <BsApple />
                 <h4>Apple store</h4>
               </a>
             </Link>
             <Link href="/" passHref>
-              <a className="text-white font-medium flex justify-between items-center rounded-full bg-primary py-3 px-5 gap-2">
+              <a className="text-white text-sm sm:text-base font-medium flex justify-between items-center rounded-full bg-primary py-3 px-3 sm:px-5 gap-2">
                 <Image src={Playstore} alt="playstore" />
                 <h4>Google Play</h4>
               </a>

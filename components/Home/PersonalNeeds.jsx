@@ -25,7 +25,7 @@ const PersonalNeeds = () => {
       breakpoint: { max: 640, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
-      partialVisibilityGutter: 30,
+      partialVisibilityGutter: 20,
     },
   };
   return (
