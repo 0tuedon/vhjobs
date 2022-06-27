@@ -1,4 +1,4 @@
-import Img2 from "@/svg/Image 21.svg";
+import Img2 from "@/svg/image-21.svg";
 import Img from "@/svg/Image.svg";
 import Image from "next/image";
 import Link from "next/link";
