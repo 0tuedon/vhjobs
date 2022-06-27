@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import IphoneT from "@/svg/iphoneT.svg";
-import Arrow from "@/svg/arrow.svg";
+import IphoneT from "@/svg/iPhoneT.svg";
+import Arrow from "@/svg/Arrow.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonial = () => {
