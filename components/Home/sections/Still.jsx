@@ -13,7 +13,7 @@ const Still = () => {
           Top reasons vhjobs should handle your needs
         </p>
       </div>
-      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 gap-8 w-full md:grid-cols-3">
+      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 gap-5 w-full md:grid-cols-3">
         {data.map((d, i) => (
           <ConvinceCard key={i} data={d} />
         ))}

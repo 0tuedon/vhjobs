@@ -21,12 +21,12 @@ const Offer = () => {
             </h1>
             <span className="flex justify-center sm:justify-start gap-5 items-center">
               <Link href="/" passHref>
-                <a className="bg-white rounded-full font-medium w-fit text-black text-center py-3 px-8 text-sm">
+                <a className="bg-white rounded-full font-medium w-fit text-black text-center py-2 px-4 sm:py-3 sm:px-8 text-sm">
                   Sign up to claim
                 </a>
               </Link>
               <Link href="/" passHref>
-                <a className="font-medium rounded-full w-fit text-white text-center py-3 px-5 text-sm">
+                <a className="font-medium rounded-full w-fit text-white text-center py-2 px-2 sm:py-3 sm:px-5 text-sm">
                   Learn more
                 </a>
               </Link>

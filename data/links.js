@@ -8,6 +8,7 @@ export const data = [
       "mobile chef",
       "painter",
       "web development",
+      "see more",
     ],
   },
   {
