@@ -21,12 +21,15 @@ const Hero = () => {
       <div className="min-h-72 relative sm:absolute sm:bottom-0 sm:text-center sm:bg-gradient-to-b from-black/5 to-accent sm:w-full sm:bg-blend-lighten bg-accent sm:bg-transparent">
         <div className="sm:hidden bg-accent h-20 w-full absolute z-0 left-0 -top-10 -skew-y-6"></div>
         <div className="relative z-10 text-white p-5">
-          <div className="sm:max-w-2xl mx-auto">
+          <div className="sm:max-w-[1000px] mx-auto">
             <h1 className="text-3xl font-semibold sm:font-bold sm:text-4xl md:text-5xl mb-2">
               Hire The Right Professional For Your{" "}
               <span className="text-primary">Business Needs</span>
             </h1>
-            <p className="text-sm mb-5 sm:font-medium sm:text-base">
+            <p className="text-sm mb-5 
+            md:font-light
+            leading-[50.8px]
+            md:text-[32px]">
               Professional and affordable services at your fingertips
             </p>
           </div>
