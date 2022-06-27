@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Rectangle from "@/svg/Rectangle 2.svg";
-import Image from "next/image";
+import Image from "next/image"
 import { NextBtn, PrevBtn } from "./Buttons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
