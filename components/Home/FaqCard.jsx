@@ -13,22 +13,22 @@ export const FaqCard = () => {
         isOpened && "pb-4"
       }`}
     >
-      <span className="flex justify-between items-center">
+      <span className="flex justify-between items-center gap-3">
         <h3
           className={`${
             isOpened && "text-primary"
-          } font-semibold text-base mb-3`}
+          } font-semibold text-sm sm:text-base mb-3`}
         >
           Can I subcribe me than one package at once?{" "}
         </h3>
         {isOpened ? (
           <AiOutlineMinus
-            className="w-4 h-4 text-primary cursor-pointer"
+            className="w-5 h-5 text-primary font-medium cursor-pointer"
             onClick={handleToggle}
           />
         ) : (
           <AiOutlinePlus
-            className="w-4 h-4 cursor-pointer"
+            className="w-5 h-5 cursor-pointer font-medium"
             onClick={handleToggle}
           />
         )}
