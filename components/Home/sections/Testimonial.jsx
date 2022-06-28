@@ -6,13 +6,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonial = () => {
   return (
-    <section className="bg-[#061725] h-fit text-white md:pb-5 mb-10">
-      <div className="overflow-hidden md:flex justify-between place-items-start md:px-10 md:pt-10">
-        <div className="mb-3 p-5 max-w-lg">
-          <h1 className="text-3xl font-semibold sm:text-4xl mb-2 sm:mb-3">
+    <section className="bg-[#061725] h-fit text-white md:pb-5 mb-16">
+      <div className="justify-between overflow-hidden md:flex place-items-start md:px-14 md:pt-14">
+        <div className="p-5 mb-5 max-w-fit">
+          <h1 className="max-w-sm mb-2 text-3xl font-bold sm:text-4xl md:text-5xl md:leading-[4rem] sm:mb-3">
             What people saying
           </h1>
-          <p className="text-sm md:text-base">
+          <p className="max-w-xs text-sm sm:text-base md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
             viverra aliquet lectus morb
           </p>
@@ -20,15 +20,15 @@ const Testimonial = () => {
             <Image src={Arrow} alt="arrow" height={200} />
           </div>
         </div>
-        <div className="relative h-80 w-[38rem] md:h-96">
+        <div className="relative h-80 w-[58rem] md:h-[32rem]">
           <Image src={IphoneT} alt="testimonial" layout="fill" />
         </div>
       </div>
-      <span className="md:flex justify-between items-center w-fit space-x-3 mr-10 ml-auto hidden mt-5">
-        <button className="rounded-full h-10 w-10 bg-white drop-shadow-md grid place-items-center">
+      <span className="items-center justify-between hidden mt-10 mb-5 ml-auto mr-10 space-x-3 md:flex w-fit">
+        <button className="grid w-10 h-10 bg-white rounded-full drop-shadow-md place-items-center">
           <IoIosArrowBack className="w-6 h-6 text-primary" />
         </button>
-        <button className="rounded-full h-10 w-10 bg-white drop-shadow-md grid place-items-center">
+        <button className="grid w-10 h-10 bg-white rounded-full drop-shadow-md place-items-center">
           <IoIosArrowForward className="w-6 h-6 text-primary" />
         </button>
       </span>

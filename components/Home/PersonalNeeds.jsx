@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Rectangle from "@/svg/Rectangle.svg";
 import Image from "next/image";
-import { NextBtn, PrevBtn } from "./Buttons";
+import { NextBtn } from "./Buttons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Personal } from "$/needs";
@@ -29,8 +29,8 @@ const PersonalNeeds = () => {
     },
   };
   return (
-    <div className="min-h-fit w-full relative rounded-md">
-      <div className="absolute h-full w-full top-0 left-0 rounded-lg overflow-hidden">
+    <div className="relative w-full rounded-md min-h-fit">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-lg">
         <Image
           src={Rectangle}
           alt="rectangle"
@@ -39,8 +39,8 @@ const PersonalNeeds = () => {
           objectPosition="center"
         />
       </div>
-      <div className="relative p-5 md:px-10">
-        <h1 className="text-2xl font-bold text-white sm:text-3xl mb-10">
+      <div className="relative p-5 md:px-10 md:pt-10">
+        <h1 className="max-w-sm mb-10 text-2xl font-bold text-white sm:text-3xl md:text-5xl md:leading-[4rem]">
           Or Personal Needs Like
         </h1>
         {CarouselRef && <NextBtn Carousel={CarouselRef} />}

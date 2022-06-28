@@ -4,18 +4,18 @@ import PricingCard from "../PricingCard";
 
 const Pricing = () => {
   return (
-    <section className="p-5 md:px-10 min-h-fit">
+    <section className="p-5 mb-10 md:px-10 min-h-fit">
       <div>
-        <div className="md:text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-semibold mb-1">
+        <div className="mb-8 md:text-center">
+          <h1 className="mb-1 text-3xl font-bold sm:text-4xl md:text-5xl md:mb-3">
             Get more <span className="text-primary">needs done</span> for less
           </h1>
-          <p className="text-sm mb-5">
+          <p className="mb-5 text-sm md:text-2xl">
             Services are perfect when they are bundled
           </p>
         </div>
         <div className="overflow-x-auto hide-scrollbar">
-          <div className="border border-primary h-fit mb-5 w-fit mx-auto rounded-lg flex justify-center items-start">
+          <div className="flex items-start justify-center mx-auto mb-5 border-[1.5px] rounded-3xl border-primary h-fit w-fit">
             {Array(3)
               .fill()
               .map((item, i) => (
@@ -24,7 +24,7 @@ const Pricing = () => {
           </div>
         </div>
         <Link href="/" passHref>
-          <a className="border border-primary text-primary text-sm rounded-full px-3 py-2 md:px-10 w-fit mx-auto block">
+          <a className="block px-3 py-2 mt-3 mx-auto text-sm border-[1.5px] rounded-full md:py-3 md:font-semibold md:text-lg border-primary text-primary md:px-20 w-fit">
             See more
           </a>
         </Link>
