@@ -3,17 +3,20 @@ import React from "react";
 
 const Card = ({ need }) => {
   return (
-    <div
-      className="text-white sm:w-[16rem] rounded-lg p-5 h-72 grid place-content-center mr-5 md:mr-0"
-      style={{ backgroundColor: need.background }}
-    >
-      <div className="relative h-24 w-24 mb-3">
-        <Image src={need.Img} alt="illustration" layout="fill" />
+    <div className="grid w-full max-w-[15rem] p-5 mr-5 text-white rounded-lg h-72 place-content-center md:mr-0 relative">
+      <div
+        className="absolute top-0 left-0 w-full h-full rounded-lg opacity-80"
+        style={{ backgroundColor: need.background }}
+      ></div>
+      <div className="relative z-10">
+        <div className="relative w-24 h-24 mb-3">
+          <Image src={need.Img} alt="illustration" layout="fill" />
+        </div>
+        <h1 className="max-w-[6rem] mb-2 text-base font-semibold text-white sm:text-lg md:text-xl md:font-bold">
+          {need.title}
+        </h1>
+        <p className="text-xs">{need.description}</p>
       </div>
-      <h1 className="text-base font-semibold text-white sm:text-lg mb-2">
-        {need.title}
-      </h1>
-      <p className="text-xs sm:text-sm">{need.description}</p>
     </div>
   );
 };

@@ -7,8 +7,8 @@ import Tag from "../Tag";
 const Hero = () => {
   let tags = ["cleaning", "fumigation", "mobile chef", "make up"];
   return (
-    <section className="relative min-h-screen w-full mb-5 sm:mb-10 md:mb-20">
-      <div className="relative w-full h-72 sm:h-screen">
+    <section className="relative w-full min-h-screen mb-5 sm:mb-14 md:mb-28">
+      <div className="relative w-full h-72 sm:h-screen md:h-[135vh]">
         <Image
           src="/hero.png"
           alt="hero"
@@ -18,41 +18,43 @@ const Hero = () => {
           priority
         />
       </div>
-      <div className="min-h-72 relative sm:absolute sm:bottom-0 sm:text-center sm:bg-gradient-to-b from-black/5 to-accent sm:w-full sm:bg-blend-lighten bg-accent sm:bg-transparent">
-        <div className="sm:hidden bg-accent h-20 w-full absolute z-0 left-0 -top-10 -skew-y-6"></div>
-        <div className="relative z-10 text-white p-5">
-          <div className="sm:max-w-2xl mx-auto">
-            <h1 className="text-3xl font-semibold sm:font-bold sm:text-4xl md:text-5xl mb-2">
+      <div className="relative min-h-72 sm:absolute sm:bottom-0 sm:text-center sm:bg-gradient-to-b from-black/5 to-accent sm:w-full sm:bg-blend-lighten bg-accent sm:bg-transparent">
+        <div className="absolute left-0 z-0 w-full h-20 -skew-y-6 sm:hidden bg-accent -top-10"></div>
+        <div className="relative z-10 p-5 text-white">
+          <div className="h-auto mx-auto sm:max-w-[56rem]">
+            <h1 className="mb-2 text-3xl font-semibold md:leading-[5rem] sm:font-bold sm:text-4xl md:text-6xl">
               Hire The Right Professional For Your{" "}
               <span className="text-primary">Business Needs</span>
             </h1>
-            <p className="text-sm mb-5 sm:font-medium sm:text-base">
+            <p className="mb-5 text-sm sm:font-medium sm:text-base md:text-lg md:font-normal">
               Professional and affordable services at your fingertips
             </p>
           </div>
           <Form />
-          <ul className="flex justify-start items-center flex-wrap gap-2 mb-5 sm:font-medium sm:max-w-xl mx-auto">
-            <h4 className="text-sm">Popular needs:</h4>
+          <ul className="flex flex-wrap items-center justify-start gap-2 mx-auto mb-5 sm:font-medium sm:max-w-xl">
+            <h4 className="text-sm md:font-bold md:text-base">
+              Popular needs:
+            </h4>
             {tags.map((tag, i) => (
               <Tag text={tag} key={i} />
             ))}
             <Link href="/" passHref>
-              <a className="text-primary font-medium text-sm hover:underline">
+              <a className="text-sm sm:font-semibold md:font-bold text-primary hover:underline md:text-base">
                 See more
               </a>
             </Link>
           </ul>
-          <div className="relative sm:max-w-3xl mx-auto">
-            <h4 className="font-medium text-base mb-3 sm:text-2xl md:text-3xl sm:font-bold">
+          <div className="relative mx-auto mt-16 max-w-[68rem] md:h-20">
+            <h4 className="mb-3 text-base font-medium sm:text-2xl md:text-5xl sm:font-bold">
               Trusted by<span className="sm:hidden">:</span>
             </h4>
-            <div className="flex justify-between items-center gap-3 absolute left-0 w-full">
+            <div className="absolute left-0 flex items-center justify-between w-full gap-3">
               {Array(3)
                 .fill()
                 .map((it, i) => (
                   <div
                     key={i}
-                    className="white rounded-md shadow-md h-16 w-44 bg-white sm:h-20 sm:w-60"
+                    className="h-16 bg-white rounded-md drop-shadow-md md:drop-shadow-2xl white w-44 sm:h-20 sm:w-60 md:w-96 md:h-28"
                   ></div>
                 ))}
             </div>

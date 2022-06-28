@@ -4,20 +4,9 @@ export const NextBtn = ({ Carousel }) => {
   return (
     <button
       onClick={() => Carousel.next()}
-      className="drop-shadow-lg absolute top-10 -right-5 z-10 bg-white rounded-full p-3 text-primary"
+      className="absolute z-10 p-3 bg-white rounded-full drop-shadow-xl md:top-14 top-10 md:-right-10 -right-5 text-primary"
     >
-      <AiOutlineArrowRight className="w-6 h-6" />
-    </button>
-  );
-};
-
-export const PrevBtn = ({ onClick }) => {
-  return (
-    <button
-      onClick={onClick}
-      className="shadow-md absolute top-10 z-10 bg-white rounded-full p-3 hidden text-primary"
-    >
-      <AiOutlineArrowLeft className="w-6 h-6" />
+      <AiOutlineArrowRight className="w-6 h-6 md:h-14 md:w-14" />
     </button>
   );
 };

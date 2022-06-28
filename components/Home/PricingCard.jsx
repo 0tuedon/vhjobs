@@ -22,43 +22,37 @@ const PricingCard = () => {
     "graphic design",
   ];
   return (
-    <div className="relative h-full border-r w-72 border-primary last-of-type:border-none last-of-type:border-transparent group">
-      <span className="text-sm absolute top-0 right-0 px-3 py-1 group-last-of-type:rounded-tr-lg font-medium bg-[#079300] text-white">
+    <div className="relative h-full border-r-[1.5px] w-[23rem] border-primary last-of-type:border-none last-of-type:border-transparent group">
+      <span className="text-sm absolute top-0 right-0 px-3 py-1 group-last-of-type:rounded-tr-[1.4rem] font-medium bg-[#079300] text-white">
         <h3>5% off</h3>
       </span>
-      <div className="relative px-3">
-        <ul className="pt-12 flex flex-wrap gap-2 items-start justify-start mb-3">
+      <div className="relative px-5">
+        <ul className="flex flex-col items-start justify-start gap-2 pt-12 mb-3">
           {tasks.map((task, i) => (
             <li
               key={i}
-              className="bg-gradient-to-l w-fit from-[#09263D] to-[#1C71B7] rounded-lg text-white px-3 py-2 text-xs capitalize font-medium"
+              className="bg-gradient-to-l w-fit from-[#09263D] to-[#1C71B7] rounded-lg text-white px-3 py-2 text-xs md:text-sm drop-shadow-md capitalize font-medium"
             >
               {task}
             </li>
           ))}
         </ul>
         <div>
-          <div className="flex justify-center items-baseline font-bold mb-3 gap-1">
-            <h3 className="text-base line-through decoration-primary bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
-              {new Intl.NumberFormat("en-US", {
-                style: "currency",
-                currency: "NGN",
-              }).format(8500)}
+          <div className="flex items-baseline justify-center gap-2 mb-3 font-bold md:my-4">
+            <h3 className="text-base md:text-2xl line-through decoration-primary bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
+              N{new Intl.NumberFormat("en-US", {}).format(8500)}
             </h3>
-            <h2 className="text-xl md:text-2xl bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
-              {new Intl.NumberFormat("en-US", {
-                style: "currency",
-                currency: "NGN",
-              }).format(6500)}
+            <h2 className="text-xl sm:text-2xl md:text-4xl bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
+              N{new Intl.NumberFormat("en-US", {}).format(6500)}
             </h2>
           </div>
           <Link href="/" passHref>
-            <a className="block rounded-full bg-primary text-sm text-white text-center font-medium py-3">
+            <a className="block py-3 text-sm font-medium text-center text-white rounded-full md:text-base bg-primary">
               Get started
             </a>
           </Link>
           <Link href="/" passHref>
-            <a className="block text-primary text-sm text-center font-medium py-3">
+            <a className="block py-3 text-sm font-semibold text-center md:text-base text-primary">
               Learn more
             </a>
           </Link>
@@ -67,20 +61,22 @@ const PricingCard = () => {
           {options.map((opt, i) => {
             return (
               <div key={i}>
-                <span className="flex justify-start items-center gap-2">
+                <span className="flex items-center justify-start gap-2">
                   <BsCheck className="w-5 h-5" />
-                  <h3 className="text-base font-medium mb-3">{opt.title}</h3>
+                  <h3 className="mb-2 text-base font-medium md:text-lg md:font-bold">
+                    {opt.title}
+                  </h3>
                 </span>
                 <ul className="space-y-1">
                   {opt.options.map((ot, id) => (
                     <li
                       key={id}
-                      className="flex justify-start items-start gap-2"
+                      className="flex items-start justify-start gap-2"
                     >
                       <span>
                         <BsCheck className="w-5 h-5" />
                       </span>
-                      <span className="text-sm">{ot}</span>
+                      <span className="text-sm md:text-base">{ot}</span>
                     </li>
                   ))}
                 </ul>
@@ -88,7 +84,7 @@ const PricingCard = () => {
             );
           })}
           <Link href="/" passHref>
-            <a className="block text-primary text-sm text-center font-medium py-5">
+            <a className="block py-5 text-sm font-semibold text-center md:text-lg sm:text-base text-primary">
               See more feature
             </a>
           </Link>
