@@ -5,7 +5,7 @@ import PersonalNeeds from "../PersonalNeeds";
 const Why = () => {
   return (
     <section className="relative w-full p-5 mb-20 min-h-fit md:px-10">
-      <div className="text-center md:mx-auto md:mb-10">
+      <div className="md:text-center md:mx-auto md:mb-10">
         <h1 className="mb-2 text-3xl font-bold sm:text-4xl md:text-5xl sm:mb-3 md:mb-4">
           Why stress when <span className="text-[#8B0093]">vhjobs</span> is
           here!

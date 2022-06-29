@@ -24,7 +24,7 @@ const Pricing = () => {
           </div>
         </div>
         <Link href="/" passHref>
-          <a className="block px-3 py-2 mt-3 mx-auto text-sm border-[1.5px] rounded-full md:py-3 md:font-semibold md:text-lg border-primary text-primary md:px-20 w-fit">
+          <a className="block px-5 py-2 mt-3 mx-auto text-sm border-[1.5px] rounded-full md:py-3 md:font-semibold md:text-lg border-primary text-primary md:px-20 w-fit">
             See more
           </a>
         </Link>

@@ -22,7 +22,7 @@ const Download = () => {
         </div>
         <div className="relative z-10 items-start justify-between px-5 pt-5 md:px-10 md:pt-10 md:flex">
           <div>
-            <h1 className="max-w-sm mb-2 text-2xl font-semibold text-center md:font-bold sm:text-3xl md:text-5xl md:leading-[4rem] md:mb-3 md:text-left">
+            <h1 className="max-w-[10rem] md:max-w-sm mb-5 mx-auto text-2xl font-semibold text-center md:font-bold sm:text-3xl md:text-5xl md:leading-[4rem] md:mb-3 md:text-left">
               Download Vhjobs app
             </h1>
             <p className="hidden max-w-lg mb-5 text-base md:block md:text-2xl">

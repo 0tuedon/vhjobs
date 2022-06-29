@@ -40,8 +40,8 @@ const PersonalNeeds = () => {
         />
       </div>
       <div className="relative p-5 md:px-10 md:pt-10">
-        <h1 className="max-w-sm mb-10 text-2xl font-bold text-white sm:text-3xl md:text-5xl md:leading-[4rem]">
-          Or Personal Needs Like
+        <h1 className="max-w-[15rem] md:max-w-sm mb-10 text-2xl font-bold text-white sm:text-3xl md:text-5xl md:leading-[4rem]">
+          Either Personal Needs Like
         </h1>
         {CarouselRef && <NextBtn Carousel={CarouselRef} />}
         <Carousel
