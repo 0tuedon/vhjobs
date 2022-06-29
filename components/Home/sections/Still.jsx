@@ -4,16 +4,16 @@ import ConvinceCard from "../ConvinceCard";
 
 const Still = () => {
   return (
-    <section className="relative min-h-fit w-full p-5 md:px-10 mb-5">
-      <div className="mb-5">
-        <h1 className="text-3xl font-semibold sm:text-4xl mb-2 sm:mb-3 text-center">
-          Still not yet <span className="text-purple-700">convinced</span>?
+    <section className="relative w-full p-5 mb-14 min-h-fit md:px-10">
+      <div className="mb-10">
+        <h1 className="mb-2 text-3xl font-bold text-center md:text-[3.3rem] sm:text-4xl sm:mb-3 md:mb-5">
+          Still not yet <span className="text-[#8B0093]">convinced</span>?
         </h1>
-        <p className="text-sm text-center md:text-base">
+        <p className="text-sm text-center md:text-xl sm:text-base">
           Top reasons vhjobs should handle your needs
         </p>
       </div>
-      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 gap-5 w-full md:grid-cols-3">
+      <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-10 w-full md:grid-cols- max-w-[68rem] mx-auto">
         {data.map((d, i) => (
           <ConvinceCard key={i} data={d} />
         ))}

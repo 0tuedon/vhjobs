@@ -16,12 +16,14 @@ const Navbar = () => {
           <ul className="justify-between hidden space-x-5 md:flex items">
             <li>
               <Link href="/" passHref>
-                <a className="text-sm font-medium">Become a service provider</a>
+                <a className="text-sm font-medium md:text-base">
+                  Become a service provider
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/" passHref>
-                <a className="px-8 py-2 text-sm font-medium text-white rounded-full bg-primary">
+                <a className="px-8 py-2 text-sm font-medium text-white rounded-full md:font-normal md:text-base bg-primary">
                   Sign In
                 </a>
               </Link>

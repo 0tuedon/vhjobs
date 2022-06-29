@@ -2,7 +2,7 @@ import React from "react";
 
 const Tag = ({ text }) => {
   return (
-    <li className="text-xs border-2 whitespace-nowrap border-white rounded-full px-3 py-2 capitalize inline-block w-fit cursor-pointer hover:bg-white transition-all duration-200 hover:text-black font-medium">
+    <li className="inline-block px-3 py-1 capitalize transition-all duration-200 border-2 border-white rounded-full cursor-pointer text-[0.65rem] whitespace-nowrap w-fit hover:bg-white hover:text-black">
       {text}
     </li>
   );

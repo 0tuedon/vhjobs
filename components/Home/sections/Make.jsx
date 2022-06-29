@@ -6,9 +6,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Make = () => {
   return (
-    <section className="relative min-h-fit w-full p-5 md:px-10 mb-5">
-      <div className="bg-primary h-96 relative rounded-lg md:pl-10">
-        <div className="absolute h-full w-full top-0 left-0 z-0 md:hidden">
+    <section className="relative w-full p-5 mb-14 min-h-fit md:px-10">
+      <div className="bg-primary h-[35rem] max-w-[68rem] mx-auto relative rounded-3xl md:pl-10">
+        <div className="absolute top-0 left-0 z-0 w-full h-full md:hidden">
           <Image
             src={Img}
             alt="person"
@@ -17,7 +17,7 @@ const Make = () => {
             objectPosition="center"
           />
         </div>
-        <div className="h-full w-full hidden md:block absolute top-0 left-0 z-0">
+        <div className="absolute top-0 left-0 z-0 hidden w-full h-full md:block">
           <Image
             src={Img2}
             alt="person"
@@ -26,23 +26,23 @@ const Make = () => {
             objectPosition="center"
           />
         </div>
-        <div className="text-white absolute bottom-0 p-5 md:pt-10 md:relative md:z-10 md:max-w-md">
-          <h1 className="text-3xl md:text-4xl font-semibold mb-2">
+        <div className="absolute bottom-0 p-5 text-white md:pt-24 md:relative md:z-10 md:max-w-lg">
+          <h1 className="mb-2 text-3xl font-semibold sm:text-4xl md:text-5xl md:font-bold md:leading-[4rem]">
             Make money with vhjobs
           </h1>
-          <p className="text-sm mb-5 md:text-base">
+          <p className="max-w-sm mb-5 text-sm sm:text-base md:text-[1.34rem] md:font-light md:leading-[2.3rem]">
             Join other 5,000 people that are selling their skill and earn
             handsomely
           </p>
-          <span className="md:flex justify-start gap-5 items-center">
+          <span className="items-center justify-start gap-5 md:flex md:pt-14">
             <Link href="/" passHref>
-              <a className="bg-white rounded-full font-medium w-fit text-black text-center flex justify-center gap-3 py-3 px-8 text-sm items-center">
+              <a className="flex items-center justify-center gap-3 px-8 py-3 text-sm font-medium text-center text-black bg-white rounded-full md:text-lg w-fit">
                 <span>Sign up to earn</span>
                 <AiOutlineArrowRight className="w-5 h-5 text-primary" />
               </a>
             </Link>
             <Link href="/" passHref>
-              <a className="border border-white font-medium rounded-full w-fit text-white hidden md:inline-block text-center py-3 px-5 text-sm">
+              <a className="hidden px-12 py-3 text-sm font-medium text-center text-white border border-white rounded-full md:text-lg w-fit md:inline-block">
                 Learn more
               </a>
             </Link>
