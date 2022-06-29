@@ -7,8 +7,8 @@ import Tag from "../Tag";
 const Hero = () => {
   let tags = ["cleaning", "fumigation", "mobile chef", "make up"];
   return (
-    <section className="relative w-full min-h-screen sm:mb-14 md:mb-28">
-      <div className="relative w-full h-72 sm:h-screen md:h-[135vh] 2xl:h-screen">
+    <section className="relative w-full lg:min-h-screen sm:mb-14 md:mb-28">
+      <div className="relative w-full h-72 md:h-screen lg:h-[135vh] 2xl:h-screen">
         <Image
           src="/hero.png"
           alt="hero"

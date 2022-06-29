@@ -7,8 +7,8 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Offer = () => {
   return (
-    <section className="relative p-5 md:px-10 h-fit md:h-96">
-      <div className="static m:absolute h-auto bg-primary rounded-lg md:top-12 md:left-1/2 md:-translate-x-1/2 w-[90%] max-w-7xl mx-auto">
+    <section className="relative p-5 md:px-10 h-fit lg:h-96">
+      <div className="static lg:absolute h-auto bg-primary rounded-lg lg:top-12 lg:left-1/2 lg:-translate-x-1/2 w-[90%] max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={Blobs} alt="blobs" layout="fill" />
         </div>

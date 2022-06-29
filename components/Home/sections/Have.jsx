@@ -9,11 +9,11 @@ const Have = () => {
     <section className="relative w-full p-5 mb-10 min-h-fit">
       <div className="w-full min-h-fit max-w-[68rem] sm:mx-auto bg-[#F4F4F4] sm:bg-white rounded-lg drop-shadow-lg">
         <div className="items-center justify-between px-5 pt-10 md:px-10 md:flex">
-          <div className="mb-5 md:max-w-lg">
-            <h1 className="mb-2 text-3xl font-bold sm:text-4xl md:text-5xl md:leading-[4rem] sm:mb-3 md:mb-5 max-w-sm">
+          <div className="mb-5 md:max-w-sm lg:max-w-lg">
+            <h1 className="mb-2 text-3xl font-bold sm:text-4xl lg:text-5xl lg:leading-[4rem] sm:mb-3 md:mb-5 max-w-sm">
               Have a need to get <span className="text-primary">done</span>?
             </h1>
-            <p className="mb-5 text-sm sm:text-base md:text-[1.4rem] md:leading-[2rem]">
+            <p className="mb-5 text-sm sm:text-base lg:text-[1.4rem] md:leading-[2rem]">
               Vhjobs is a platform created for individuals and businesses
               looking for people to help them handle their tasks. Vhjobs
               connects these individuals/businesses with skilled professionals
