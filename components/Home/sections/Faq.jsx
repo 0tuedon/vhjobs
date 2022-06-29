@@ -23,7 +23,7 @@ const Faq = () => {
             ))}
         </div>
         <Link href="/" passHref>
-          <a className="block px-3 py-2 mt-8 mx-auto text-sm border-[1.5px] rounded-full md:py-3 md:font-semibold md:text-lg border-primary text-primary md:px-16 w-fit">
+          <a className="block px-3 py-2 mt-8 mx-auto text-sm border-[1.5px] rounded-full md:py-3 md:font-bold md:text-base border-primary text-primary md:px-16 w-fit">
             Visit FAQ
           </a>
         </Link>

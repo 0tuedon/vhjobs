@@ -8,7 +8,7 @@ const Hero = () => {
   let tags = ["cleaning", "fumigation", "mobile chef", "make up"];
   return (
     <section className="relative w-full min-h-screen mb-5 sm:mb-14 md:mb-28">
-      <div className="relative w-full h-72 sm:h-screen md:h-[135vh]">
+      <div className="relative w-full h-72 sm:h-screen md:h-[135vh] 2xl:h-screen">
         <Image
           src="/hero.png"
           alt="hero"
@@ -26,7 +26,7 @@ const Hero = () => {
               Hire The Right Professional For Your{" "}
               <span className="text-primary">Business Needs</span>
             </h1>
-            <p className="mb-5 text-sm sm:font-medium sm:text-base md:text-lg md:font-normal">
+            <p className="mb-5 text-sm sm:font-medium sm:text-lg md:text-xl md:font-normal">
               Professional and affordable services at your fingertips
             </p>
           </div>

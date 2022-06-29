@@ -8,7 +8,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Offer = () => {
   return (
     <section className="relative p-5 md:px-10 h-96">
-      <div className="absolute h-auto bg-primary rounded-lg top-12 left-1/2 -translate-x-1/2 w-[90%]">
+      <div className="absolute h-auto bg-primary rounded-lg top-12 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={Blobs} alt="blobs" layout="fill" />
         </div>
@@ -23,10 +23,8 @@ const Offer = () => {
             <span className="flex items-center justify-center gap-5 sm:justify-start">
               <Link href="/" passHref>
                 <a className="flex items-center justify-center w-56 px-4 py-2 text-sm font-medium text-center text-black bg-white rounded-full hover:gap-2 group whitespace-nowrap md:text-base md:font-bold md:px-10 md:py-4 sm:py-3 sm:px-8">
-                  <span className="transition-all duration-200 linear">
-                    Sign up to claim
-                  </span>
-                  <span className="w-0 overflow-hidden transition-all duration-200 -translate-x-3 group-hover:w-fit group-hover:translate-x-0">
+                  <span>Sign up to claim</span>
+                  <span className="w-0 overflow-hidden transition-all duration-500 ease-in-out scale-0 group-hover:scale-100 group-hover:w-5">
                     <AiOutlineArrowRight className="w-4 h-4" />
                   </span>
                 </a>
