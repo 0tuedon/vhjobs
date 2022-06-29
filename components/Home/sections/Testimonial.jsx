@@ -20,7 +20,7 @@ const Testimonial = () => {
             <Image src={Arrow} alt="arrow" height={200} />
           </div>
         </div>
-        <div className="relative h-80 w-[58rem] md:h-[32rem]">
+        <div className="relative h-80 w-[33rem] md:w-[58rem] md:h-[32rem]">
           <Image src={IphoneT} alt="testimonial" layout="fill" />
         </div>
       </div>

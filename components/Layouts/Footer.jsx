@@ -12,7 +12,7 @@ import Country from "@/icons/Country.svg";
 
 const Footer = () => {
   return (
-    <footer className="p-5 pt-40 text-white h-fit bg-accent md:px-16">
+    <footer className="p-5 text-white md:pt-40 h-fit bg-accent md:px-16">
       <div className="max-w-[1500px] mx-auto">
         <div className="items-start justify-between mb-5 md:flex md:gap-5">
           <div className="items-start justify-between gap-4 mb-3 sm:flex md:flex-1 md:max-w-lg">

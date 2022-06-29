@@ -20,7 +20,7 @@ const Have = () => {
               that are closest to them. Why stress when vhjobs is here.
             </p>
             <Link href="/" passHref>
-              <a className="flex items-center justify-center w-full gap-3 py-3 text-xs font-medium text-center text-white rounded-full md:text-base bg-primary md:max-w-xs sm:p-3 sm:text-sm">
+              <a className="flex items-center justify-center w-full gap-3 py-3 text-xs font-bold text-center text-white rounded-full md:text-base bg-primary md:max-w-xs sm:p-3 sm:text-sm">
                 <span>Tell us what you need to get done</span>
                 <AiOutlineArrowRight className="w-5 h-5" />
               </a>

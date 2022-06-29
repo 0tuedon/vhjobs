@@ -39,10 +39,10 @@ const PricingCard = () => {
         </ul>
         <div>
           <div className="flex items-baseline justify-center gap-2 mb-3 font-bold md:my-4">
-            <h3 className="text-base md:text-2xl line-through decoration-primary bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
+            <h3 className="text-lg md:text-2xl line-through decoration-primary bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
               N{new Intl.NumberFormat("en-US", {}).format(8500)}
             </h3>
-            <h2 className="text-xl sm:text-2xl md:text-4xl bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
+            <h2 className="text-2xl md:text-4xl bg-gradient-to-l bg-clip-text text-transparent from-[#09263D] to-[#1C71B7]">
               N{new Intl.NumberFormat("en-US", {}).format(6500)}
             </h2>
           </div>

@@ -7,7 +7,7 @@ import Tag from "../Tag";
 const Hero = () => {
   let tags = ["cleaning", "fumigation", "mobile chef", "make up"];
   return (
-    <section className="relative w-full min-h-screen mb-5 sm:mb-14 md:mb-28">
+    <section className="relative w-full min-h-screen sm:mb-14 md:mb-28">
       <div className="relative w-full h-72 sm:h-screen md:h-[135vh] 2xl:h-screen">
         <Image
           src="/hero.png"
@@ -44,7 +44,7 @@ const Hero = () => {
               </a>
             </Link>
           </ul>
-          <div className="relative mx-auto mt-16 max-w-[68rem] md:h-20">
+          <div className="relative mx-auto mt-5 md:mt-16 max-w-[68rem] md:h-20">
             <h4 className="mb-3 text-base font-medium sm:text-2xl md:text-5xl sm:font-bold">
               Trusted by<span className="sm:hidden">:</span>
             </h4>
