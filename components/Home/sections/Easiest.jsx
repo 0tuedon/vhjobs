@@ -5,7 +5,7 @@ import Image from "next/image";
 const Easiest = () => {
   return (
     <section className="relative w-full p-5 mb-10 min-h-fit md:px-20">
-      <div className="items-start justify-between md:flex">
+      <div className="items-start justify-between md:flex max-w-[68rem] mx-auto">
         <div className="hidden md:block relative md:h-[32rem] w-full md:w-[50rem] max-w-lg">
           <Image src={Group} alt="group" layout="fill" />
         </div>

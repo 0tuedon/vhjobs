@@ -7,7 +7,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Testimonial = () => {
   return (
     <section className="bg-[#061725] h-fit text-white md:pb-5 mb-16">
-      <div className="justify-between overflow-hidden md:flex place-items-start md:px-14 md:pt-14">
+      <div className="justify-between mx-auto overflow-hidden max-w-7xl md:flex place-items-start md:px-14 md:pt-14">
         <div className="p-5 mb-5 max-w-fit">
           <h1 className="max-w-sm mb-2 text-3xl font-bold sm:text-4xl md:text-5xl md:leading-[4rem] sm:mb-3">
             What people saying
