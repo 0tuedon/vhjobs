@@ -10,7 +10,7 @@ const FooterLinks = ({ detail }) => {
   return (
     <div className="transition-all linear duration-200 overflow-hidden h-fit">
       <span className="flex justify-between items-center">
-        <h3 className="text-base font-medium mb-2 capitalize">
+        <h3 className="text-base md:text-[22px] font-bold mb-2 capitalize">
           {detail.title}
         </h3>
         <span className="sm:hidden">
@@ -27,7 +27,7 @@ const FooterLinks = ({ detail }) => {
           )}
         </span>
       </span>
-      <ul className={`${isOpened ? "h-auto" : "h-0"} sm:h-auto`}>
+      <ul className={`${isOpened ? "h-auto" : "h-0"}  sm:h-auto`}>
         {detail.links.map((link, i) => {
           if (
             detail.title === "popular needs" &&
@@ -36,7 +36,10 @@ const FooterLinks = ({ detail }) => {
             return (
               <li key={i}>
                 <Link href="/" passHref>
-                  <a className="text-xs capitalize text-primary sm:text-sm opacity-80 transition-all duration-200 linear hover:underline font-medium">
+                  <a className="text-xs hidden md:inline-block capitalize text-primary 
+                  sm:text-sm opacity-80 transition-all duration-200 linear
+                  
+                  hover:underline font-medium">
                     {link}
                   </a>
                 </Link>
@@ -46,7 +49,11 @@ const FooterLinks = ({ detail }) => {
           return (
             <li key={i}>
               <Link href="/" passHref>
-                <a className="text-xs capitalize sm:text-sm opacity-80 transition-all duration-200 linear hover:underline font-medium">
+                <a className="text-xs 
+                text-white
+                capitalize sm:text-[17px]
+                leading-[29px] 
+                transition-all duration-200 linear hover:underline font-light">
                   {link}
                 </a>
               </Link>

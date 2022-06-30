@@ -3,7 +3,35 @@
 @tailwind utilities;
 
 
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+@font-face {
+  font-family: Circular;
+  font-weight: 800 ;
+  src: url(../assets/font/CircularStd-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 700;
+  src: url(../assets/font//CircularStd-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 600;
+  src: url(../assets/font/CircularStd-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: Circular;
+  font-weight:400;
+  src: url(../assets/font/CircularStd-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 300;
+  src: url(../assets/font/CircularStd-Light.otf) format("opentype");
+}
+
+
+
+
 
                 
 @layer components {
@@ -13,6 +41,6 @@
   }
 }
 body {
-  font-family: 'Circular Std', sans-serif;
+  font-family: 'Circular', sans-serif;
                                                 
 }

@@ -5,7 +5,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Ready = () => {
   return (
     <section className="p-5 text-center md:p-10 bg-lightblue">
-      <h1 className="text-2xl font-bold text-[#8B0093] sm:text-3xl md:text-[3rem] mb-5 md:mb-14">
+      <h1 className="text-2xl
+      font-black
+      text-[#8B0093] sm:text-3xl md:text-[3rem] mb-5 md:mb-[32px]">
         Ready to get your need done?
       </h1>
       <Link href="/" passHref>

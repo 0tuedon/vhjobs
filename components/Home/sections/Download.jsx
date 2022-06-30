@@ -9,8 +9,8 @@ import { BsApple } from "react-icons/bs";
 
 const Download = () => {
   return (
-    <section className="relative w-full p-5 mb-14 min-h-fit md:px-10">
-      <div className="bg-lightblue max-w-[68rem] mx-auto h-fit relative rounded-3xl md:pl-10 drop-shadow-xl">
+    <section className="relative w-full p-5 mb-14 md:min-h-screen md:px-10">
+      <div className="bg-lightblue max-w-7xl mx-auto md:h-[80vh] relative rounded-3xl md:pl-10 drop-shadow-xl">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src={Vector}
@@ -25,7 +25,9 @@ const Download = () => {
             <h1 className="max-w-[10rem] md:max-w-sm mb-5 mx-auto text-2xl font-semibold text-center md:font-bold sm:text-3xl md:text-5xl md:leading-[4rem] md:mb-3 md:text-left">
               Download Vhjobs app
             </h1>
-            <p className="hidden max-w-lg mb-5 text-base md:block md:text-2xl">
+            <p className="hidden max-w-lg mb-5 text-base
+            font-light
+            md:block md:text-2xl">
               Scan the QR code below with your phone camera to download the
               Vhjobs app.
             </p>

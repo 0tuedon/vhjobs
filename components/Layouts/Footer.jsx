@@ -12,24 +12,36 @@ import Country from "@/icons/Country.svg";
 
 const Footer = () => {
   return (
-    <footer className="p-5 text-white md:pt-10 lg:pt-40 h-fit bg-accent md:px-16">
+    <footer className=" text-white md:pt-10 lg:pt-40 h-fit bg-accent md:px-16">
       <div className="max-w-[1500px] mx-auto">
         <div className="items-start justify-between mb-5 lg:flex md:gap-5">
-          <div className="items-start justify-between gap-4 mb-3 sm:flex md:flex-auto md:max-w-lg">
+          <div className="items-start justify-between 
+          p-2
+          md:p-5
+          gap-4 mb-3 sm:flex md:flex-auto md:max-w-lg">
             {data.map((detail, i) => (
               <FooterLinks key={i} detail={detail} />
             ))}
           </div>
-          <div className="items-start gap-10 md:flex md:max-w-lg ">
-            <div className="py-3 border-t border-white md:border-transparent">
+          <div className="items-start  md:flex md:max-w-lg ">
+            <div className="  p-3 pt-4
+          md:p-5 border-t border-white md:border-transparent">
               <h3 className="mb-3 text-base font-medium capitalize">Get app</h3>
-              <span className="flex flex-wrap gap-3">
+              <span className="flex mb-4 flex-wrap gap-3">
                 <Link href="/" passHref>
-                  <a className="flex items-center justify-between gap-2 px-2 py-2 text-sm text-white border rounded-md w-fit sm:px-5">
+                  <a className="flex items-center justify-between gap-2 px-2 
+                  py-2 text-sm text-white border rounded-md w-fit sm:px-5">
                     <IoLogoGooglePlaystore className="w-6 h-6" />
                     <span className="flex flex-col">
-                      <p className="text-xs opacity-80">Download from</p>
-                      <h4>PlayStore</h4>
+                      <p className="
+                      font-light
+                      text-[13px]
+                      tracking-[0.01rem]
+                      ">Download from</p>
+                      <h4 className="text-[15px]
+                      tracking-[0.01rem]
+                      font-light
+                      ">PlayStore</h4>
                     </span>
                   </a>
                 </Link>
@@ -37,14 +49,24 @@ const Footer = () => {
                   <a className="flex items-center justify-between gap-2 px-2 py-2 text-sm text-white border rounded-md w-fit sm:px-5">
                     <BsApple className="w-6 h-6" />
                     <span className="flex flex-col">
-                      <p className="text-xs opacity-80">Download from</p>
-                      <h4>AppleStore</h4>
+                      <p className="text-[13px]
+                      tracking-[0.01rem]
+                      font-light
+                      ">Download from</p>
+                      <h4 className="
+                      text-[15px]
+                      tracking-[0.01rem]
+                      font-light">AppleStore</h4>
                     </span>
                   </a>
                 </Link>
               </span>
             </div>
-            <div className="flex-1 w-full py-3 border-t border-white md:border-transparent">
+            <div className="flex-1 
+             p-3
+             pt-5
+             md:p-5
+            w-full py-3 border-t border-white md:border-transparent">
               <h3 className="mb-3 text-base font-medium capitalize">
                 Follow us
               </h3>
@@ -75,7 +97,8 @@ const Footer = () => {
                 (l, i) => (
                   <li key={i}>
                     <Link href="/" passHref>
-                      <a className="text-xs font-medium capitalize transition-all duration-200 sm:text-sm opacity-80 linear hover:underline">
+                      <a className="text-xs font-light capitalize 
+                      transition-all duration-200 sm:text-[15px]  linear hover:underline">
                         {l}
                       </a>
                     </Link>
@@ -103,7 +126,11 @@ const Footer = () => {
               </span>
             </span>
           </div>
-          <p className="text-sm text-center opacity-80 md:text-left">
+          <p className="text-sm 
+          font-light
+          text-center
+          text-[15px]
+          md:text-left">
             &copy; {new Date().getFullYear().toString()}. Vhjobs services
             limited
           </p>

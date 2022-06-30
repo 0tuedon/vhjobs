@@ -25,11 +25,11 @@ const PersonalNeeds = () => {
       breakpoint: { max: 640, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 70,
     },
   };
   return (
-    <div className="relative w-full rounded-md min-h-fit">
+    <div className="relative w-full rounded-md ">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-lg">
         <Image
           src={Rectangle}
@@ -39,7 +39,7 @@ const PersonalNeeds = () => {
           objectPosition="center"
         />
       </div>
-      <div className="relative p-5 md:px-10 md:pt-10">
+      <div className="relative  p-5 md:px-10 md:pt-10">
         <h1 className="max-w-[15rem] md:max-w-sm mb-10 text-2xl font-bold text-white sm:text-3xl md:text-5xl md:leading-[4rem]">
           Either Personal Needs Like
         </h1>
