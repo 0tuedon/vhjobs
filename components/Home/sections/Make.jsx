@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Make = () => {
   return (
     <section className="relative w-full p-5 mb-14 min-h-fit md:px-10">
-      <div className="bg-primary h-[25rem] overflow-hidden  md:h-[35rem] max-w-[68rem] mx-auto relative rounded-3xl md:pl-10">
+      <div className="bg-primary h-[25rem] overflow-hidden  md:h-[38rem] max-w-7xl mx-auto relative rounded-3xl md:pl-10">
         <div className="absolute top-0 left-0 z-0 w-full h-full md:hidden">
           <Image
             src={Img}

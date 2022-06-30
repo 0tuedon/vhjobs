@@ -25,8 +25,8 @@ const BusinessNeeds = () => {
       breakpoint: { max: 640, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
-      partialVisibilityGutter: 20,
-    },
+      partialVisibilityGutter: 70,
+    }
   };
   return (
     <div className="relative w-full rounded-md min-h-fit">

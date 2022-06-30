@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { BsCheck } from "react-icons/bs";
 
-const PricingCard = () => {
+const PricingCard = ({features}) => {
   const options = [
     {
       title: "Three times cleaning",
@@ -22,20 +22,35 @@ const PricingCard = () => {
     "graphic design",
   ];
   return (
-    <div className="relative h-full border-r-[1.5px] w-[23rem] border-primary last-of-type:border-none last-of-type:border-transparent group">
-      <span className="text-sm absolute top-0 right-0 px-3 py-1 group-last-of-type:rounded-tr-[1.4rem] font-medium bg-[#079300] text-white">
+    <div className="relative h-full 
+    first-of-type:rounded-l-3xl md:rounded-none
+    md:border-r-[1.5px]
+    even:rounded-none
+    border
+    border-primary 
+    last-of-type:rounded-r-3xl
+    md:last-of-type:border-transparent group">
+      <span className="text-sm 
+      w-[70px]
+      h-[35px]
+      flex
+      absolute top-0 right-0 px-3 py-1 
+      group-last-of-type:rounded-tr-[1.4rem] font-medium bg-[#079300] text-white">
         <h3>5% off</h3>
       </span>
       <div className="relative px-5">
-        <ul className="flex flex-col items-start justify-start gap-2 pt-12 mb-3">
+        <ul className="flex min-h-[200px] flex-col items-start justify-start gap-2 pt-12 mb-3">
           {tasks.map((task, i) => (
             <li
               key={i}
-              className="bg-gradient-to-l w-fit from-[#09263D] to-[#1C71B7] rounded-lg text-white px-3 py-2 text-xs md:text-sm drop-shadow-md capitalize font-medium"
+              className="bg-gradient-to-l
+            
+               w-fit from-[#09263D] to-[#1C71B7] rounded-lg 
+               text-white px-3 py-2 text-xs md:text-[17px] drop-shadow-md capitalize font-medium"
             >
               {task}
             </li>
-          ))}
+          )).slice(0,4-features)}
         </ul>
         <div>
           <div className="flex items-baseline justify-center gap-2 mb-3 font-bold md:my-4">
@@ -47,7 +62,13 @@ const PricingCard = () => {
             </h2>
           </div>
           <Link href="/" passHref>
-            <a className="block py-3 text-sm font-medium text-center text-white rounded-full md:text-base bg-primary">
+            <a className="block py-3 
+            text-sm font-medium text-center 
+            text-white rounded-full md:text-base
+            max-w-[400px]
+            mx-auto
+            w-[300px]
+            bg-primary">
               Get started
             </a>
           </Link>
@@ -67,7 +88,7 @@ const PricingCard = () => {
                     {opt.title}
                   </h3>
                 </span>
-                <ul className="space-y-1">
+                <ul className="space-y-1 font-light">
                   {opt.options.map((ot, id) => (
                     <li
                       key={id}

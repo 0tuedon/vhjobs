@@ -5,25 +5,33 @@ import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <nav className="p-4 bg-white md:px-10">
-      <div className="max-w-[1500px] mx-auto flex items-center justify-between">
+    <nav className="p-4 
+    h-[79px]
+    max-h-[112px] bg-white md:px-10">
+      <div className=" mx-auto flex items-center justify-between">
         <Link href="/" passHref>
           <a>
             <Logo className="w-32" />
           </a>
         </Link>
-        <div className="flex items-center space-x-5">
-          <ul className="justify-between hidden space-x-5 md:flex items">
+        <div className="flex items-center  space-x-5">
+          <ul className="justify-between hidden space-x-5 md:flex items-center">
             <li>
               <Link href="/" passHref>
-                <a className="text-sm font-medium md:text-base">
+                <a className=" flex text-[14px] font-medium md:text-[20px]">
                   Become a service provider
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/" passHref>
-                <a className="px-8 py-2 text-sm font-medium text-white rounded-full md:font-normal md:text-base bg-primary">
+                <a className="
+                h-[48px]
+                w-[140px]
+                flex
+                items-center
+                justify-center
+                text-sm font-medium text-white rounded-[50px] md:font-normal md:text-base bg-primary">
                   Sign In
                 </a>
               </Link>

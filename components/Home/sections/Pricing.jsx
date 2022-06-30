@@ -4,7 +4,7 @@ import PricingCard from "../PricingCard";
 
 const Pricing = () => {
   return (
-    <section className="p-5 mb-10 md:px-10 min-h-fit">
+    <section className="p-5 mb-10 md:px-10 ">
       <div>
         <div className="mb-8 md:text-center">
           <h1 className="mb-1 text-3xl font-bold sm:text-4xl md:text-5xl md:mb-3">
@@ -15,11 +15,11 @@ const Pricing = () => {
           </p>
         </div>
         <div className="overflow-x-auto hide-scrollbar">
-          <div className="flex items-start justify-center mx-auto mb-5 border-[1.5px] rounded-3xl border-primary h-fit w-fit">
+          <div className="flex md:max-w-6xl items-start md:justify-center md:mx-auto mb-5 md:border-[1.5px] rounded-3xl border-primary h-fit ">
             {Array(3)
               .fill()
               .map((item, i) => (
-                <PricingCard key={i} />
+                <PricingCard features={i} key={i} />
               ))}
           </div>
         </div>

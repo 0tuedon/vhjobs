@@ -7,17 +7,23 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Offer = () => {
   return (
-    <section className="relative p-5 md:px-10 h-fit lg:h-96">
-      <div className="static lg:absolute h-auto bg-primary rounded-lg lg:top-12 lg:left-1/2 lg:-translate-x-1/2 w-[90%] max-w-7xl mx-auto">
+    <section className="relative p-5 md:px-10 h-fit  lg:h-96">
+      <div className="static lg:absolute  bg-primary
+       rounded-[32px] 
+       px-[20px] md:px-[0px]
+       h-[340px]
+       lg:top-12 lg:left-1/2 lg:-translate-x-1/2 w-[90%] md:max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={Blobs} alt="blobs" layout="fill" />
         </div>
-        <div className="relative z-10 items-center justify-between p-5 sm:flex md:pr-16">
-          <div className="relative w-64 mx-auto h-44 sm:w-96 sm:h-72 md:h-96 md:w-[45rem]">
+        <div className="relative z-10 items-center justify-between p-2 sm:flex md:pr-16">
+          <div className="relative w-64  h-44 sm:w-96 sm:h-72 md:h-96 md:w-[45rem]">
             <Image src={Banner} alt="banner" layout="fill" />
           </div>
           <div>
-            <h1 className="max-w-sm mb-5 text-2xl font-bold text-center text-white sm:text-3xl md:mb-10 md:text-4xl">
+            <h1 className="max-w-sm mb-5 
+            
+            text-[21px] font-bold text-center text-white sm:text-3xl md:mb-10 md:text-4xl">
               Get 10% discount on your first purchase
             </h1>
             <span className="flex items-center justify-center gap-5 sm:justify-start">

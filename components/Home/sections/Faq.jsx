@@ -4,18 +4,23 @@ import { FaqCard } from "../FaqCard";
 
 const Faq = () => {
   return (
-    <section className="p-5 mb-10 md:px-10 h-fit">
-      <div>
-        <div className="mb-8 md:text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-[3.3rem] font-bold mb-5">
+    <section className="p-5 mb-10  md:px-10 md:h-[101vh]">
+      <div className="max-w-7xl">
+        <div className="mb-8 mt-[30px] md:text-center">
+          <h1 className="text-3xl sm:text-4xl 
+          text-gray
+          md:text-[60px] font-black mb-5">
             Frequently Asked Question
           </h1>
-          <p className="mb-5 text-sm md:text-base md:font-medium">
+          <p className="mb-5 
+          text-gray
+          md:text-[20px]
+          text-sm  md:font-medium">
             Join thousands of individuals and businesses who trust vhjobs to
             help them handle their needs.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto space-y-3 w-fit">
+        <div className="max-w-7xl mx-auto space-y-[16px] w-full">
           {Array(3)
             .fill()
             .map((data, i) => (
