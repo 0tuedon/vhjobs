@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import IphoneT from "@/svg/iPhoneT.svg";
-import IphoneT2 from "@/svg/iPhoneT.png";
+import IphoneT2 from "@/svg/iphoneT.png";
 import Arrow from "@/svg/Arrow.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
