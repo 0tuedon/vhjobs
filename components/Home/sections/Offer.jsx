@@ -12,6 +12,7 @@ const Offer = () => {
        rounded-[32px] 
        px-[20px] md:px-[0px]
        h-[340px]
+       md:h-[450px]
        lg:top-12 lg:left-1/2 lg:-translate-x-1/2 w-[90%] md:max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={Blobs} alt="blobs" layout="fill" />
